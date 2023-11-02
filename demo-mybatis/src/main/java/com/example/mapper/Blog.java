@@ -11,6 +11,12 @@ import java.util.Date;
  `content` varchar(32)  NULL COMMENT ' ',
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ insert into blog(id,date,author_id,title,content) value
+  (1,now(),1,'title1111','content1111'),
+ (2,now(),3,'title222','content222'),
+ (3,now(),2,'title3333','content333'),
+ (4,now(),3,'title4444','content444'),
+ (5,now(),1,'title555','content5555')
  *
  */
 public class Blog {

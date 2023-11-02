@@ -9,6 +9,7 @@ package com.example.simpleBean;
  `name` varchar(32)  NULL COMMENT ' ',
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ insert into tag(id,name)values(1,'tag1'),(2,'tag2'),(3,'tag3'),(4,'tag4'),(5,'tag5');
  */
 public class Tag {
     private long id;

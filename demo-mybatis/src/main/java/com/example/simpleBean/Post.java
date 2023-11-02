@@ -23,6 +23,10 @@ import java.util.Date;
  `body` varchar(32)  NULL COMMENT ' ',
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ insert into post(id,blog_id,author_id,created_on,section,subject,draft,body)values
+ (1,1,1,now(),'section11','subject11','draft11','body11'),
+ (2,1,2,now(),'section222','subject22','draft22','body22'),
+ (3,2,2,now(),'section33','subject33','draft33','body33')
  */
 public class Post {
     private long id;

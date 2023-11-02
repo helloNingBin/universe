@@ -12,6 +12,10 @@ package com.example.simpleBean;
  `comment` varchar(32)  NULL COMMENT ' ',
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ insert into comment(id,post_id,name,comment)values
+ (1,1,'name11','comment1'),
+ (2,1,'name222','comment2'),
+ (3,2,'name333','comment333')
  */
 public class Comment {
     private long id;//id

@@ -11,6 +11,10 @@ package com.example.simpleBean;
  `favourite_section` varchar(32)  NULL COMMENT ' ',
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ insert into author(id,username,password,email,bio,favourite_section)values
+ (1,'aaa','aaa','aaa@mail','bio_aa','fava_aa'),
+ (2,'bbbb','bbbb','bbb@mail','bio_bb','fava_bb'),
+ (3,'cccc','cccc','cccc@mail','bio_cccc','fava_ccc')
  *
  */
 public class Author {
