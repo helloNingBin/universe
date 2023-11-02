@@ -1,12 +1,25 @@
 package com.example.simpleBean;
 
+/**
+ *
+ CREATE TABLE  `author` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键自动增长',
+ `username` varchar(32) NOT NULL COMMENT ' ',
+ `password` varchar(32) NOT NULL COMMENT ' ',
+ `email` varchar(32)  NULL COMMENT ' ',
+ `bio` varchar(32)  NULL COMMENT ' ',
+ `favourite_section` varchar(32)  NULL COMMENT ' ',
+ PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ *
+ */
 public class Author {
     private long id;
     private String userName;
     private String password;
     private String email;
     private String bio;
-    private String favouriteSection;
+    private String favouriteSection;//favourite_section
 
     public long getId() {
         return id;
