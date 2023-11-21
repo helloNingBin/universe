@@ -24,8 +24,8 @@ public class FileUtil {
     }
 
     public static void main(String[] args) {
-        String inputFilePath = "E:\\temp\\log\\catalina.out"; // 替换为你的文件路径
-        String outputDirectory = "E:\\temp\\log"; // 替换为你的输出目录
+        String inputFilePath = "E:\\temp\\log\\order\\nohup.out"; // 替换为你的文件路径
+        String outputDirectory = "E:\\temp\\log\\order"; // 替换为你的输出目录
         int chunks = 30; // 分割成10个文件
 
         try {

@@ -1,10 +1,8 @@
 package com.example.resultMap;
 
 import com.example.MySessionFactory;
-import com.example.mapper.Blog;
 import com.example.mapper.BlogMapper;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 
 import java.io.IOException;
 
@@ -28,6 +26,6 @@ public class SimpleResultMap {
     public static void main(String[] args) throws IOException {
         SqlSession sqlSession =  MySessionFactory.getSessionFactory().openSession();
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
-        System.out.println(mapper.selectBlogSimpleResultMap(11l));
+//        System.out.println(mapper.selectBlogSimpleResultMap(11l));
     }
 }

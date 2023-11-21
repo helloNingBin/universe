@@ -29,7 +29,7 @@ public class insertMany {
         m1.put("title", "title list");
 //        m1.put("content", "content list");
         objList.add(m1);objList.add(m1);objList.add(m1);
-        mapper.insertMany(objList);
+//        mapper.insertMany(objList);
         sqlSession.commit();
     }
 }

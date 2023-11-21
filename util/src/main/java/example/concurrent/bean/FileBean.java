@@ -11,6 +11,9 @@ public class FileBean {
         this.file = file;
     }
 
+    public FileBean() {
+    }
+
     public int getId() {
         return id;
     }

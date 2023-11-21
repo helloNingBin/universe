@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+<input type="file" id="imageInput" accept="image/*">
+<button onclick="uploadImage()">Upload Image</button>
+
+<script>
+    function uploadImage() {
+        var input = document.getElementById('imageInput');
+        var file = input.files[0];
+
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var base64Data = e.target.result;
+                sendImageToServer(base64Data);
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function sendImageToServer(base64Data) {
+        // 使用 XMLHttpRequest 或 Fetch API 将 base64Data 发送到后端
+        // 可以使用 AJAX、axios、fetch 等
+        // 示例代码中使用 Fetch API
+        fetch('/upload', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ base64Data: base64Data }),
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+    }
+</script>
+</body>
+</html>

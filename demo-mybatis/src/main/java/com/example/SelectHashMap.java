@@ -1,6 +1,5 @@
 package com.example;
 
-import com.example.mapper.Blog;
 import com.example.mapper.BlogMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,6 +18,6 @@ public class SelectHashMap {
         SqlSessionFactory sqlSessionFactory = MySessionFactory.getSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
-        System.out.println(mapper.selectBlogMap(1));
+//        System.out.println(mapper.selectBlogMap(1));
     }
 }

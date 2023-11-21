@@ -18,7 +18,7 @@ public class InsertOne {
     public static void main(String[] args) throws IOException {
         SqlSession sqlSession =  MySessionFactory.getSessionFactory().openSession();
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
-        mapper.insertOne("333", new Date(), "tile3", "content4");
+//        mapper.insertOne("333", new Date(), "tile3", "content4");
         sqlSession.commit();
     }
 }

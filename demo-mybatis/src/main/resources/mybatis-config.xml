@@ -9,8 +9,12 @@
         <!-- 如果属性 'username' 没有被配置，'username' 属性的值将为 'ut_user' -->
         <property name="username" value="${username:root}"/>
     </properties>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
     <typeAliases>
-        <package name="com.example.mapper"/>
+        <package name="com.example.model"/>
+        <package name="com.example.simpleBean"/>
     </typeAliases>
     <typeHandlers>
         <typeHandler handler="com.example.typeHandler.StringTyepHandlerExample"/>
@@ -31,5 +35,6 @@
         <!--  <mapper resource="com/example/mapper/BlogMapper.xml"/>-->
         <!-- 将包内的映射器接口全部注册为映射器，这样就不用像上面那样，一个一个的去创建了 -->
          <package name="com.example.mapper"/>
+         <package name="com.example.simpleBean"/>
      </mappers>
  </configuration>

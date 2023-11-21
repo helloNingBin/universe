@@ -1,15 +1,10 @@
 package com.example;
 
-import com.example.mapper.Blog;
 import com.example.mapper.BlogMapper;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * 从 XML 中构建 SqlSessionFactory
@@ -36,8 +31,8 @@ public class HelloWord {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
         System.out.println(mapper);
-        Blog blog = mapper.selectBlog(1);
+  /*      Blog blog = mapper.selectBlog(1);
         System.out.println(blog);
-        System.out.println(mapper.selectBlogMap(1));
+        System.out.println(mapper.selectBlogMap(1));*/
     }
 }

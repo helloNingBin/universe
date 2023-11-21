@@ -1,8 +1,8 @@
 package com.example.insert;
 
 import com.example.MySessionFactory;
-import com.example.mapper.Blog;
 import com.example.mapper.BlogMapper;
+import com.example.model.Blog;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;
@@ -17,10 +17,10 @@ import java.util.Date;
  */
 public class insertOneByBean {
     public static void main(String[] args) throws IOException {
-        SqlSession sqlSession =  MySessionFactory.getSessionFactory().openSession();
+      /*  SqlSession sqlSession =  MySessionFactory.getSessionFactory().openSession();
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
-        Blog b = new Blog(new Date(), "insertOneByBean author", "insertOneByBean title ", "insertOneByBean content");
+        Blog b = new Blog(new Date(), 2, "insertOneByBean title ", "insertOneByBean content");
         mapper.insertOneByBean(b);
-        sqlSession.commit();
+        sqlSession.commit();*/
     }
 }
