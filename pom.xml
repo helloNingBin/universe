@@ -12,6 +12,7 @@
         <module>util</module>
         <module>demo-mybatis</module>
         <module>demo-lang</module>
+        <module>demo-elasticsearch</module>
     </modules>
 
     <properties>

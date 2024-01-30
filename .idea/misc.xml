@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/demo-springboot/pom.xml" />
         <option value="$PROJECT_DIR$/demo-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-dubbo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-batch-insert/pom.xml" />
+        <option value="$PROJECT_DIR$/dailyhub/pom.xml" />
       </list>
     </option>
   </component>

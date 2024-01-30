@@ -24,12 +24,28 @@ public class FileUtil {
     }
 
     public static void main(String[] args) {
-        String inputFilePath = "E:\\temp\\log\\order\\nohup.out"; // 替换为你的文件路径
-        String outputDirectory = "E:\\temp\\log\\order"; // 替换为你的输出目录
+        splittcp();
+    }
+
+    public static void splitWscenter() {
+        String inputFilePath = "E:\\temp\\log\\wscenter\\catalina.out"; // 替换为你的文件路径
+        String outputDirectory = "E:\\temp\\log\\wscenter"; // 替换为你的输出目录
         int chunks = 30; // 分割成10个文件
 
         try {
             splitFile(inputFilePath, outputDirectory, chunks,"out");
+            System.out.println("文件分割成功。");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void splittcp() {
+        String inputFilePath = "E:\\temp\\log\\tcp\\server-0.0.1-SNAPSHOT.log"; // 替换为你的文件路径
+        String outputDirectory = "E:\\temp\\log\\tcp"; // 替换为你的输出目录
+        int chunks = 30; // 分割成10个文件
+
+        try {
+            splitFile(inputFilePath, outputDirectory, chunks,"log");
             System.out.println("文件分割成功。");
         } catch (IOException e) {
             e.printStackTrace();

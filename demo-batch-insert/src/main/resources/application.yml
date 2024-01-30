@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://139.159.196.163:3306/test?useUnicode=true
+    username: root
+    password: FXLNMrtc2952qblCN
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8123
