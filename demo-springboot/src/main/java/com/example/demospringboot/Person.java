@@ -3,10 +3,11 @@ package com.example.demospringboot;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.io.Serializable;
 import java.util.Date;
-
+@ConfigurationProperties(prefix = "per")
 public class Person implements Serializable {
     private String name;
     //私有属性
@@ -46,5 +47,13 @@ public class Person implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
