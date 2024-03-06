@@ -1,0 +1,17 @@
+{
+
+  "properties": [
+    {
+      "name": "speaker.name",
+      "type": "java.lang.String",
+      "description": "Enable debug logs.",
+      "defaultValue": "ninggg"
+    },
+    {
+      "name": "speaker.name2",
+      "type": "java.lang.String",
+      "description": "Location of the logging configuration file. For instance, `classpath:logback.xml` for Logback.",
+      "defaultValue": "org.springframework.boot.context.logging.LoggingApplicationListener"
+    }
+  ]
+}

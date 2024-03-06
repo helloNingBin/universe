@@ -1,3 +1,8 @@
+
+
+
+
+
 per:
   remark: 它在yaml中
 #测试bean中的各种类型注入
@@ -33,3 +38,14 @@ yml:
       - {name: n1,weight: 1}
       - {name: n2,weight: 2}
     k2: [{name: n3,weight: 3},{name: n4,weight: 4}]
+spring:
+  resources:
+    static-locations: [classpath:/static,classpath:/public,classpath:/resources,classpath:/META-INF/resources,classpath:/haha]
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: false   #开启页面表单的Rest功能
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+

@@ -24,11 +24,23 @@ public class FileUtil {
     }
 
     public static void main(String[] args) {
-        splitOrder();
+        splitEnterprise();
     }
     public static void splitOrder() {
         String inputFilePath = "E:\\temp\\log\\order\\nohup.out"; // 替换为你的文件路径
         String outputDirectory = "E:\\temp\\log\\order"; // 替换为你的输出目录
+        int chunks = 30; // 分割成10个文件
+
+        try {
+            splitFile(inputFilePath, outputDirectory, chunks,"out");
+            System.out.println("文件分割成功。");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void splitEnterprise() {
+        String inputFilePath = "E:\\temp\\log\\enterpriseSys\\catalina.out"; // 替换为你的文件路径
+        String outputDirectory = "E:\\temp\\log\\enterpriseSys"; // 替换为你的输出目录
         int chunks = 30; // 分割成10个文件
 
         try {

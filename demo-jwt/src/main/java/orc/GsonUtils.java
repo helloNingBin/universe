@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
- */
+ *//*
+
 package orc;
 
 import com.google.gson.Gson;
@@ -9,9 +10,11 @@ import com.google.gson.JsonParseException;
 
 import java.lang.reflect.Type;
 
+*/
 /**
  * Json工具类.
- */
+ *//*
+
 public class GsonUtils {
     private static Gson gson = new GsonBuilder().create();
 
@@ -27,3 +30,4 @@ public class GsonUtils {
         return (T) gson.fromJson(json, typeOfT);
     }
 }
+*/

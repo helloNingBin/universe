@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Upload</title>
+    <title>static</title>
 </head>
 <body>
 <input type="file" id="imageInput" accept="image/*">
+<form action="/user" method="get">
+    <input value="REST-GET提交" type="submit" />
+</form>
+
+<form action="/user" method="post">
+    <input value="REST-POST提交" type="text" name="remark" />
+    <input value="REST-POST提交" type="submit" />
+</form>
+
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="DELETE"/>
+    <input value="REST-DELETE 提交" type="submit"/>
+</form>
+
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="PUT" />
+    <input value="REST-PUT提交"type="submit" />
+    <form>
+
 <button onclick="uploadImage()">Upload Image</button>
 
 <script>

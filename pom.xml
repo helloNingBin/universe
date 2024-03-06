@@ -13,6 +13,7 @@
         <module>demo-mybatis</module>
         <module>demo-lang</module>
         <module>demo-elasticsearch</module>
+        <module>demo-spring-boot-starter</module>
     </modules>
 
     <properties>
