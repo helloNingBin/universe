@@ -23,7 +23,7 @@ public class LogSearcher {
 //[ERROR] 2024-02-20 16:46:50,579 com.mobile.weixin.WeixinOpenCenterJumpServlet -
     public static void main(String[] args) {
         String filePath = "E:\\temp\\log\\mobile\\catalina.out";
-        String keyword1 = "F240215231924382";
+        String keyword1 = "oSaGm6JDfWYW8JL5Wg5hSPdu2x-k";
         String keyword2 = "[ERROR] 2024-02-20 16:46:50,788 com.mobile.weixin.WeixinAuthUtil - 微信用户个人信息------{\"openid\":\"oSaGm6L7HgKA";
         searchLog(filePath, keyword1, keyword2);
     }
